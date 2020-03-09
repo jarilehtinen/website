@@ -11,14 +11,14 @@ const eleventy = require("./gulp-tasks/eleventy.js");
 // Watch files
 function watchFiles()
 {
-    gulp.watch('./css/**/*.styl', css.build);
-    gulp.watch('./js/**/*.js', js.build);
-    gulp.watch('./images/**/*', images.copy);
+    gulp.watch('./src/assets/css/**/*.styl', css.build);
+    gulp.watch('./src/assets/js/**/*.js', js.build);
+    gulp.watch('./src/assets/images/**/*', images.copy);
 
     gulp.watch(
         [
             "./.eleventy.js",
-            "./src/**/*",
+            "./src/**/*[.md, .njk]",
         ],
         eleventy.build
     );
