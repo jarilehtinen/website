@@ -5,7 +5,7 @@ const uglify = require('gulp-uglify');
 function buildJs() {
     return gulp
         .src([
-            './js/highlight.js'
+            './src/assets/js/highlight.js'
         ])
         .pipe(concat('jari.min.js'))
         .pipe(uglify())

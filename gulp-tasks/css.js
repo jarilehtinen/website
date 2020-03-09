@@ -5,7 +5,7 @@ const cleanCSS = require('gulp-clean-css');
 
 function cssBuild() {
     return gulp
-        .src('./css/index.styl')
+        .src('./src/assets/css/index.styl')
         .pipe(stylus({ compress: true }))
         .pipe(cleanCSS({
             level: {

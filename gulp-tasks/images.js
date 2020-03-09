@@ -3,7 +3,7 @@ const glob = require("glob");
 const path = require("path");
 
 function copyImages(done) {
-    let sourceDir = "./images/";
+    let sourceDir = "./src/assets/images/";
     let distDir = "./html/images/";
 
     // Get files
