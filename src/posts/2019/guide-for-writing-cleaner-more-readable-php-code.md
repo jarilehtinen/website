@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: "Guide for writing cleaner, more readable PHP code"
+description: "Few tips I've learned over the years."
 date: 2019-04-12
 author: Jari Lehtinen
 tags: ['post', 'PHP']

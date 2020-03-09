@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: "Logitech MX Master 3: Better buttons and wheels"
+description: "Best mouse just got better."
 date: 2019-10-14
 author: Jari Lehtinen
 tags: ['post', 'tech']

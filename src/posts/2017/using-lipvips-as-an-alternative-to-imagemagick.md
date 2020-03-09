@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: "Using libvips as an alternative to ImageMagick"
+description: "Finding the fastest way to create thumbnails."
 date: 2017-11-11
 author: Jari Lehtinen
 tags: ['post', 'tech']
