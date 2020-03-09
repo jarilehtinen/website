@@ -12,13 +12,7 @@ pagination:
 {% for post in posts %}
     <article class="posts-post">
         <h1 class="post-title" itemprop="name"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h1>
-        <p class="post-meta">
-            <time date-time="{{ post.data.date | dateISO }}" class="post-date">{{ post.data.date | dateReadable }}</span>
-            <span class="post-author">
-                <span class="post-author-image"></span>
-                {{ post.data.author }}
-            </span>
-        </p>
+        <time date-time="{{ post.data.date | dateISO }}" class="post-date">{{ post.data.date | dateReadable }}</time>
     </article>
 {% endfor %}
 </div>
