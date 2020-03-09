@@ -1,0 +1,21 @@
+---
+layout: base.njk
+permalink: "{{ page.fileSlug }}/index.html"
+---
+<article class="post">
+    <h1 class="post-title" itemprop="name">{{ title }}</h1>
+    <p class="post-meta">
+        <time date-time="{{ date | dateISO }}" class="post-date">{{ date | dateReadable }}</span>
+        <span class="post-author">
+            <span class="post-author-image"></span>
+            {{ author }}
+        </span>
+    </p>
+    <div class="post-text">
+    {{ content | safe }}
+    </div>
+</article>
+{% if code %}
+<script src="/js/jari.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{% endif %}

@@ -1,0 +1,30 @@
+---
+title: Jari Lehtinen
+layout: base.njk
+pagination:
+    data: collections.post
+    size: 5
+    reverse: true
+    alias: posts
+---
+<div class="posts">
+{% for post in posts %}
+    <article class="posts-post">
+        <h1 class="post-title" itemprop="name"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h1>
+        <p class="post-meta">
+            <time date-time="{{ post.data.date | dateISO }}" class="post-date">{{ post.data.date | dateReadable }}</span>
+            <span class="post-author">
+                <span class="post-author-image"></span>
+                {{ post.data.author }}
+            </span>
+        </p>
+    </article>
+{% endfor %}
+</div>
+
+{% if pagination.href.previous or pagination.href.next %}
+<ul>
+    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %}</li>
+    <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}</li>
+</ul>
+{% endif %}
