@@ -6,6 +6,7 @@ const browsersync = require('./gulp-tasks/browsersync.js');
 const css = require('./gulp-tasks/css.js');
 const images = require('./gulp-tasks/images.js');
 const eleventy = require("./gulp-tasks/eleventy.js");
+const clean = require("./gulp-tasks/clean.js");
 
 // Watch files
 function watchFiles()
@@ -26,10 +27,9 @@ function watchFiles()
 const watch = gulp.parallel(watchFiles, browsersync.init);
 
 // Build
-const build = gulp.parallel(
-    css.build,
-    images.copy,
-    eleventy.build
+const build = gulp.series(
+    clean.dist,
+    gulp.parallel(css.build, images.copy, eleventy.build)
 );
 
 // Exports
