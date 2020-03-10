@@ -3,7 +3,6 @@ const gulp = require('gulp');
 
 // Tasks
 const browsersync = require('./gulp-tasks/browsersync.js');
-const js = require('./gulp-tasks/js.js');
 const css = require('./gulp-tasks/css.js');
 const images = require('./gulp-tasks/images.js');
 const eleventy = require("./gulp-tasks/eleventy.js");
@@ -12,7 +11,6 @@ const eleventy = require("./gulp-tasks/eleventy.js");
 function watchFiles()
 {
     gulp.watch('./src/assets/css/**/*.styl', css.build);
-    gulp.watch('./src/assets/js/**/*.js', js.build);
     gulp.watch('./src/assets/images/**/*', images.copy);
 
     gulp.watch(
@@ -31,8 +29,7 @@ const watch = gulp.parallel(watchFiles, browsersync.init);
 const build = gulp.parallel(
     css.build,
     images.copy,
-    eleventy.build,
-    js.build
+    eleventy.build
 );
 
 // Exports
