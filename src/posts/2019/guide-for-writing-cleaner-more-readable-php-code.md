@@ -55,7 +55,7 @@ foreach ($animals as $animal) {
         $large_young_animals[] = $animal;
     } else {
         $other_animals[] = $animal;
-  }
+    }
 }
 
 // Oh, we need to remove all animals which are older than 4 years old.
@@ -80,23 +80,23 @@ Imagine you have this rather messy example of a function:
 
 ```php
 function sortAnimals($animals) {
-	$large_young_animals = array();
-	$other_animals = array();
+    $large_young_animals = array();
+    $other_animals = array();
 
-	foreach ($animals as $animal) {
+    foreach ($animals as $animal) {
         if (($animal['species'] == 'cat' && $animal['gender'] == 'male' && ($animal['age'] >= 0 && $animal['age'] <= 5) && $animal['weight'] >= 10) || $animal['species'] == 'elephant') {
             $large_young_animals[] = $animal;
         } else {
             $other_animals[] = $animal;
         }
-   	}
-	
-	// Oh, we need to remove all animals which are older than 8 years old.
-	// This is a bit fictional, but you've seen it (hotfix, anyone?).
-	foreach ($large_young_animals as $i => $animal) {
-	    if ($animal['age'] > 4) {
-	        unset($large_young_animals[$i]);
-	    }
+    }
+    
+    // Oh, we need to remove all animals which are older than 8 years old.
+    // This is a bit fictional, but you've seen it (hotfix, anyone?).
+    foreach ($large_young_animals as $i => $animal) {
+        if ($animal['age'] > 4) {
+            unset($large_young_animals[$i]);
+        }
     }
 
     return array($large_young_animals, $other_animals);
@@ -215,7 +215,7 @@ function getLargeYoungMaleAnimals($animals) {
             $large_young_animals[] = $animal;
         }
     }
-	
+    
     return $large_young_animals;
 }
 ```
@@ -239,7 +239,7 @@ function getLargeYoungMaleAnimals($animals) {
             $large_young_animals[] = $animal;
         }
     }
-	
+    
     return $large_young_animals;
 }
 ```
@@ -451,7 +451,7 @@ function isLargeYoungMaleCat($animal) {
     }
 
     if (!isLarge($animal)) {
-    	  return false;
+          return false;
     }
     
     if (!isMale($animal)) {
@@ -486,7 +486,7 @@ function isMale($animal) {
 }
 
 function isYoung($animal) {
-	  return $animal['age'] > 5 ? false : true;
+      return $animal['age'] > 5 ? false : true;
 }
 
 function isLarge($animal) {
@@ -519,7 +519,7 @@ function getLargeYoungMaleCats($animals) {
             unset($animals[$i]);
         }
     }
-	
+    
     return $animals;
 }
 
@@ -529,7 +529,7 @@ function getElephants($animals) {
             unset($animals[$i]);
         }
     }
-	
+    
     return $animals;
 }
 
