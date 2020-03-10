@@ -1,95 +1,170 @@
-/*
+// Default light color scheme
+.namespace
+	opacity .7
 
-Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata
+	color codeComment
 
-*/
+.token.punctuation
+	color codePunctuation
 
-.hljs
-  display block
-  overflow-x auto
-  background #F6F8FA
+.token.number,
+.token.symbol,
+.token.deleted
+	color codeNumber
 
-  @media (prefers-color-scheme: dark)
-    background-color #222
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted
+	color codeString
 
-/* Base color: saturation 0 */
-.hljs,
-.hljs-subst
-  color #444
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string
+	color codeOperator
 
-  @media (prefers-color-scheme: dark)
-    color #ccc
+.token.atrule,
+.token.attr-value,
+.token.keyword
+	color codeKeyword
 
-.hljs-comment
-  color #888888
+.token.function
+	color codeFunction
 
-  @media (prefers-color-scheme: dark)
-    color #555
+.token.regex,
+.token.important,
+.token.variable
+	color codeVariable
 
-.hljs-keyword,
-.hljs-attribute,
-.hljs-selector-tag,
-.hljs-meta-keyword,
-.hljs-doctag,
-.hljs-name
-  font-weight 600
+.token.important,
+.token.bold
+	font-weight bold
 
-  @media (prefers-color-scheme: dark)
-    font-weight 400
+.token.italic
+	font-style italic
 
+.token.constant
+	color codeConstant
 
-/* User color hue 0 */
+.token.class-name
+	color codeClassName
 
-.hljs-type,
-.hljs-string,
-.hljs-number,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-quote,
-.hljs-template-tag,
-.hljs-deletion
-  color #880000
+.token.parameter
+	color codeParameter
 
-  @media (prefers-color-scheme: dark)
-    color yellow
+.token.interpolation
+	color codeInterpolation
 
-.hljs-title,
-.hljs-section
-  color #880000
-  font-weight bold
+.token.punctuation.interpolation-punctuation
+	color codeInterpolationPunctuation
 
-  @media (prefers-color-scheme: dark)
-    color green
+.token.boolean
+	color codeBoolean
 
-.hljs-regexp,
-.hljs-symbol,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-link,
-.hljs-selector-attr,
-.hljs-selector-pseudo
-  color #BC6060
+.token.property
+	color codeProperty
 
-/* Language color hue 90 */
-.hljs-literal
-  color #78A960
+.token.selector
+	color codeSelector
 
-.hljs-built_in,
-.hljs-bullet,
-.hljs-code,
-.hljs-addition
-  color #397300
+.token.tag
+	color codeTag
 
-/* Meta color hue 200 */
-.hljs-meta
-  color #1f7199
+.token.attr-name
+	color codeAttrName
 
-.hljs-meta-string
-  color #4d99bf
+.token.attr-value
+	color codeAttrValue
 
-/* Misc effects */
-.hljs-emphasis
-  font-style italic
+.token.entity
+	color codeEntity
 
-.hljs-strong
-  font-weight bold
+.token.namespace
+	color codeNamespace
+
+// Dark color scheme
+@media (prefers-color-scheme: dark)
+	.token.comment,
+	.token.prolog,
+	.token.doctype,
+	.token.cdata
+		color codeDarkComment
+
+	.token.punctuation
+		color codeDarkPunctuation
+
+	.token.number,
+	.token.symbol,
+	.token.deleted
+		color codeDarkNumber
+
+	.token.string,
+	.token.char,
+	.token.builtin,
+	.token.inserted
+		color codeString
+
+	.token.operator,
+	.token.entity,
+	.token.url,
+	.language-css .token.string,
+	.style .token.string
+		color codeDarkOperator
+
+	.token.atrule,
+	.token.attr-value,
+	.token.keyword
+		color codeDarkKeyword
+
+	.token.function
+		color codeDarkFunction
+
+	.token.regex,
+	.token.important,
+	.token.variable
+		color codeDarkVariable
+
+	.token.constant
+		color codeDarkConstant
+
+	.token.class-name
+		color codeDarkClassName
+
+	.token.parameter
+		color codeDarkParameter
+
+	.token.interpolation
+		color codeDarkInterpolation
+
+	.token.punctuation.interpolation-punctuation
+		color codeDarkInterpolationPunctuation
+
+	.token.boolean
+		color codeDarkBoolean
+
+	.token.property
+		color codeDarkProperty
+
+	.token.selector
+		color codeDarkSelector
+
+	.token.tag
+		color codeDarkTag
+
+	.token.attr-name
+		color codeDarkAttrName
+
+	.token.attr-value
+		color codeDarkAttrValue
+
+	.token.entity
+		color codeDarkEntity
+
+	.token.namespace
+		color codeDarkNamespace

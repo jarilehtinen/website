@@ -49,6 +49,12 @@ p
 
     code
         font-size .8em
+        background-color codeLight
+
+        @media (prefers-color-scheme: dark)
+            background-color codeDark
+            color #fff
+            border-radius 3px
 
     @media only screen and (max-width: 650px)
         font-size 1.3em
@@ -72,25 +78,24 @@ ul
 
 code
     display inline-block
-    background-color #F6F8FA
-    color #444
     padding .4em .5em
+    font-size 1.15em
+    line-height 1.35em
+    color #444
     overflow auto
     white-space pre
-    font-size 1.1em
-    line-height 1.15em
 
 pre
-    font-size 1.15em
-    overflow auto
-    margin 0
-    background-color #F6F8FA
-    margin 1.2em 0
+    margin 1.2em 0 1.5em 0
     padding .9em .95em
-
-    code 
-        display block
-        line-height 1.35em
+    font-family monospace
+    font-size 1em
+    overflow auto
+    background codeLight
 
     @media only screen and (max-width: 650px)
         font-size 1.05em
+
+    code
+        display block
+        line-height 1.35em
