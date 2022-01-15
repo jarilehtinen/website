@@ -5,7 +5,13 @@ moment.locale('en');
  
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(syntaxHighlight);
-    
+
+    eleventyConfig.addFilter('capitalize', s => {
+        if (typeof s !== 'string') return '';
+        return s.charAt(0).toUpperCase() + s.slice(1);
+    });
+
+
     eleventyConfig.addFilter('dateReadable', date => {
         return moment(date).format('LL');
     });

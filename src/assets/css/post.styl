@@ -5,21 +5,37 @@
     @media only screen and (max-width: 850px)
         max-width 100%
 
-.post-date
-    display block
-    font-size 1.5em
-    background-image url(/images/date.svg)
-    background-size auto 20px
-    background-position left center
-    padding-left 30px
-    color #888
+.post-meta
+    display inline-block
+    color #000
+    padding-top .5em
 
-    @media only screen and (max-width: 650px)
-        font-size 1.3em
+.post-date,
+.post-author,
+.post-tag
+    display inline-block
+    font-family smallFonts
+    font-size .8em
+    background-size auto 18px
+    background-position left center
+    padding-left 21px
+    margin-right 15px
+
+.post-date
+    background-image url(/images/date.svg)
+
+.post-author
+    background-image url(/images/sound.svg)
+    background-size auto 22px
+    padding-left 25px
+
+.post-tag
+    background-image url(/images/tag.svg)
 
 .post-text
     max-width 750px
-    margin 0 0 0 15vw
+    margin 0 0 0 5vw
+    padding-top 3em
 
     @media only screen and (max-width: 1000px)
         margin 0 0 0 10vw
@@ -31,29 +47,24 @@
     margin-bottom 5em
 
     .post-title
-        font-size 8vw
+        font-size 5vw
         line-height .95em
         letter-spacing -.03em
         margin-bottom .1em
 
+        @media only screen and (max-width: 1400px)
+            font-size 7vw
+
         @media only screen and (max-width: 1200px)
-            font-size 12vw
+            font-size 8vw
 
         @media only screen and (max-width: 1000px)
-            font-size 12vw
+            font-size 8vw
 
-        @media only screen and (max-width: 650px)
-            font-size 14vw
+        @media only screen and (max-width: 800px)
+            font-size 10vw
             line-height 1.1em
 
-
-    .post-date
-        margin 0 0 2em 0
-
-        @media only screen and (max-width: 650px)
-            padding-left 0
-            margin-top -.2em
-            margin-bottom 1em
 
     img
         width 100%

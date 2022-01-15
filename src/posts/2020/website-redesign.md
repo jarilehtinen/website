@@ -1,10 +1,10 @@
 ---
 layout: post.njk
 title: "Website Redesign"
-description: "Constantly changing."
+description: "Larger headings, more space, more everything."
 date: 2020-03-09
 author: Jari Lehtinen
-tags: ['post']
+tags: ['post', 'blog', 'web design']
 code: false
 ---
 

@@ -4,7 +4,17 @@ permalink: "{{ page.fileSlug }}/index.html"
 ---
 <article class="post">
     <h1 class="post-title" itemprop="name">{{ title }}</h1>
-    <time date-time="{{ date | dateISO }}" class="post-date">{{ date | dateReadable }}</time>
+    <div class="post-meta">
+        <time date-time="{{ date | dateISO }}" class="post-date">{{ date | dateReadable }}</time>
+        <span class="post-author">{{ author }}</span>
+        {% for tag in tags %}
+            {% if tag != 'post' %}
+                <span class="post-tag">
+                {{ tag | capitalize }}
+                </span>
+            {% endif %}
+        {% endfor %}
+    </div>
     <div class="post-text">
     {{ content | safe }}
     </div>
