@@ -12,8 +12,16 @@
     letter-spacing -0.03em
     color #000
 
+    span
+        display none
+
     @media (prefers-color-scheme: dark)
         background-image url(/images/logo-white.svg)
 
-    span
-        display none
+    @media only screen and (max-width: 450px)
+        width 100%
+        height 80px
+        background-size 100% auto
+
+    @media only screen and (max-width: 350px)
+        height 60px
