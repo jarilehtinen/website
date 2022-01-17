@@ -1,0 +1,82 @@
+==================================================================
+https://keybase.io/jarilehtinen
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jari.me
+  * I am jarilehtinen (https://keybase.io/jarilehtinen) on keybase.
+  * I have a public key with fingerprint A46D CC39 52BF 674A BBBD  E843 C86D 96AC 07B5 0657
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01014e813f66550c0848eb14efa40a2f7695c36e2fe5692b96bb06195f4a191d9bf80a",
+      "fingerprint": "a46dcc3952bf674abbbde843c86d96ac07b50657",
+      "host": "keybase.io",
+      "key_id": "c86d96ac07b50657",
+      "kid": "01014e813f66550c0848eb14efa40a2f7695c36e2fe5692b96bb06195f4a191d9bf80a",
+      "uid": "d5aa87263b1620ed3e0dc46d03988700",
+      "username": "jarilehtinen"
+    },
+    "merkle_root": {
+      "ctime": 1642406310,
+      "hash_meta": "6efc14ac54558ba5cf0a3fdc1609b70acadc0b77fab25c5fcb390cfd34b9d923",
+      "seqno": 21651269
+    },
+    "revoke": {
+      "sig_ids": [
+        "60e59c4932b18423ec33c493520343f0802f22ae4b88ca4f077fe13a1f3260af0f"
+      ]
+    },
+    "service": {
+      "hostname": "jari.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1642406312,
+  "expire_in": 157680000,
+  "prev": "d8204ef33e2e2fbae07fa9363dba7c23f4f1779fe580c2f09e04d9ca4c41a801",
+  "seqno": 24,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMK+AnicrVNvaFZVHH7XP2mZlU1kLbBulK1e9Py/57xlBIM0SjDzT60/L+ece852
+3Xbvu3vvXhWdFpUELbRoE41gUZQWGUX7EGot60NZr4s+pDVEAy0HE+bCCFytc0eB
+RB+7X+49P57n93t+z3PPF1dfWqivOzV75HD79KrWuq8PVXsK8vTNezZ5Kg42eqVN
+XoeZeZnOwKRZuSMMvJIHIIDEcIgtY5QCDTjhRrmSlQRIZH0mqMbMIGsoE0gJphRg
+UFBLJBQwEMpyIL2iZ8OozSSVJIwy11YSFmiNBUXKMp9IpVRgOMGas0AwqYGvKGDU
+d8T2OM0ZTpySqVkUxq7mDuUZef+B/59198y0C6iU3EcMK8gQMAE2INBuB4AF5z4A
+OTA1SSS7jEOvk0nYadqzMDKR11v0ukzS0WnKSRxnucE6C3MYZAQRwDAEbkmZtpe7
+TCYdmxmrIZGaEkq5klRbILENNGRAKB9ILQMNlO9bqRDV1GqFBdA2wESJQCDstKSm
+O4q9EoKMQsSEk5CYatxh8ulp2Oa8S73SYx4DhgpNBEYKcoKw0RjnR4oAJtgCDpBF
+SBqiONeSWOCGGogltBgxIC2w3hO9+bSkGuqZ5nlYF5mwyH0VvUoSZ7GOO12xPcsq
+aSn3JNtYyVHrjSr/zS+rMArcX+IYVZOkYRw5jxzy33ahomc2VMLElMMcQX3GgXvy
+OaaaZ8URcDljbJCLV0kDnFUCMxwo6WuELbHQ94ULngONLBAGkEC4/TSBkgN4kX/E
+6ZRtrqczLZJZT2K83kPDj19WqKsvXHH5Jfn1KdRfee0/l6pp86zpB5ruW1bfMHD4
+lhNrfvjqkdrB2Uuvk7O2zT818ez9CyeWw/oF75RXLD7WPNW3d/jo/nsa8a/DF64/
+euLkwZXZitui39c9I4PjS+alR15dv/vu7VMjc395YcEf47X+97/trhxpOTk6Orn7
+Gv/HAz+b1rXzeXn6RbrvwplPdr3x8bHfvj+7/83ztcY5k41vjeGFHw0lLSP0quf6
+d8AiWtb/3b7Ce2snzxyYOz5xw+vbt41/drxh4OFHu+nqqS9/urG0ZKj27odPfjPn
+zq2337tn8OmVS4dGb13cMG/1muUttdTf+soHp/ee23nXqsEtYw/ddPalzU3N517+
+vDl6bay1Otj3Kb9jR9/Otx/8c8OW53cNnH+K/AUYRIkC
+=CnNg
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jarilehtinen
+
+==================================================================
+
